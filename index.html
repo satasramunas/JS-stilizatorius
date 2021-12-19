@@ -6,10 +6,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>JS-stilizatorius</title>
     <style>
+        * {
+            box-sizing: border-box;
+        }
 
         #box {
-            width: 500px;
             border: 2px solid black;
+            word-wrap: break-word;
         }
 
     </style>
@@ -20,15 +23,15 @@
     <input type="text" id="content" oninput="myFunction()">
 
     <label for="size">Size:</label>
-    <input type="number" id="size">
+    <input type="number" id="size" value="" oninput="myFunction()">
 
     <br></br>
 
     <label for="height">Height:</label>
-    <input type="number" id="height">
+    <input type="number" id="height" value="" oninput="myFunction()">
 
     <label for="width">Width</label>
-    <input type="number" id="width">
+    <input type="number" id="width" value="" oninput="myFunction()">
 
     <br></br>
 
@@ -71,7 +74,9 @@
 
     <br></br>
 
-    <div id="box">Add some text in the Content field</div>
+    
+    <div id="box"> Add some text in the Content field</div>
+    
 
 
     <script src="script.js"></script>
