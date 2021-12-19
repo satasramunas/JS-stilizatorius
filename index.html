@@ -9,10 +9,13 @@
         * {
             box-sizing: border-box;
         }
+        body {
+            margin: 0;
+        }
 
         #box {
-            border: 2px solid black;
-            word-wrap: break-word;
+           word-wrap: break-word;
+           border: 2px solid black;
         }
 
     </style>
@@ -36,11 +39,11 @@
     <br></br>
 
     <label for="style">Font style:</label>
-    <input type="radio" class="style" name="font-style" value="bold">
+    <input type="radio" id="bold" name="style" value="bold" onclick="myFunction()">
     <label for="bold">Bold</label>
-    <input type="radio" class="style" name="font-style" value="italic">
+    <input type="radio" id="italic" name="style" value="italic" onclick="myFunction()">
     <label for="italic">Italic</label>
-    <input type="radio" class="style" name="font-style" value="underline">
+    <input type="radio" id="underline" name="style" value="underline" onclick="myFunction()">
     <label for="underline">Underline</label>
 
     <br></br>
@@ -66,13 +69,18 @@
     <br></br>
 
     <label for="text-color">Text Color:</label>
-    <input type="color" id="textColor" value="#458558">
+    <input type="color" id="text-color" value="#458558" oninput="myFunction()">
     <label for="background-color">Background Color:</label>
-    <input type="color" id="backgroundColor" value="#FFFFFF">
+    <input type="color" id="background-color" value="#FFFFFF" oninput="myFunction()">
     <label for="border-color">Border Color:</label>
-    <input type="color" id="borderColor" value="#000000">
+    <input type="color" id="border-color" value="#000000" oninput="myFunction()">
 
     <br></br>
+
+    <label for="border-width">Border width:</label>
+    <input type="range" min="1" max="50" step="1" value="2" id="border-width" oninput="myFunction()">
+    <label for="padding">Padding:</label>
+    <input type="range" min="1" max="50" step="1" value="0" id="padding" oninput="myFunction()">
 
     
     <div id="box"> Add some text in the Content field</div>
