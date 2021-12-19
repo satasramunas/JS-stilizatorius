@@ -17,62 +17,64 @@
 <body>
 
     <label for="content">Content:</label>
-    <input type="text">
+    <input type="text" id="content" oninput="myFunction()">
 
     <label for="size">Size:</label>
-    <input type="number">
+    <input type="number" id="size">
 
     <br></br>
 
     <label for="height">Height:</label>
-    <input type="number">
+    <input type="number" id="height">
 
     <label for="width">Width</label>
-    <input type="number">
+    <input type="number" id="width">
 
     <br></br>
 
     <label for="style">Font style:</label>
-    <input type="radio" name="font-style">
+    <input type="radio" class="style" name="font-style" value="bold">
     <label for="bold">Bold</label>
-    <input type="radio" name="font-style">
+    <input type="radio" class="style" name="font-style" value="italic">
     <label for="italic">Italic</label>
-    <input type="radio" name="font-style">
+    <input type="radio" class="style" name="font-style" value="underline">
     <label for="underline">Underline</label>
 
     <br></br>
 
     <label for="align">Align:</label>
-    <input type="radio" name="align">
+    <input type="radio" class="align" name="align" value="left">
     <label for="left">Left</label>
-    <input type="radio" name="align">
+    <input type="radio" class="align" name="align" value="middle">
     <label for="middle">Middle</label>
-    <input type="radio" name="align">
+    <input type="radio" class="align" name="align" value="right">
     <label for="right">Right</label>
 
     <br></br>
 
     <label for="vertical">Vertical:</label>
-    <input type="radio" name="vertical">
+    <input type="radio" class="vertical" name="vertical" value="top">
     <label for="top">Top</label>
-    <input type="radio" name="vertical">
+    <input type="radio" class="vertical" name="vertical" value="middle">
     <label for="middle">Middle</label>
-    <input type="radio" name="vertical">
+    <input type="radio" class="vertical" name="vertical" value="bottom">
     <label for="bottom">Bottom</label>
 
     <br></br>
 
     <label for="text-color">Text Color:</label>
-    <input type="color">
-    <label for="cackground-color">Background Color:</label>
-    <input type="color">
+    <input type="color" id="textColor" value="#458558">
+    <label for="background-color">Background Color:</label>
+    <input type="color" id="backgroundColor" value="#FFFFFF">
     <label for="border-color">Border Color:</label>
-    <input type="color">
+    <input type="color" id="borderColor" value="#000000">
 
     <br></br>
 
-    <div id="box">Labababas</div>
+    <div id="box">Add some text in the Content field</div>
 
+
+    <script src="script.js"></script>
     
 </body>
 </html>
